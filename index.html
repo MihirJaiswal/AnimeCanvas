@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="hero-section">
+            <nav>
+                <h2>Lorem ipsum.</h2>
+                <button class="login">
+                    <ion-icon name="person" class="person"></ion-icon>
+                    <p>Log in</p>
+                </button>
+            </nav>
+        </div>
+
+        <div class="modal-overlay">
+            <div class="modal-box">
+                <ion-icon class="close" name="close"></ion-icon>
+                <img src="" alt="image">
+            </div>
+        </div>
+
+        <div class="login-overlay">
+            <div class="login-outer-box">
+                <div class="chibi-container">
+                    <img class="chibi-img default-img active" src="asests/chibi1.png" alt="image">
+                    <img class="chibi-img error-img" src="asests/chibi2.png" alt="image">
+                </div>
+
+                <div class="login-inner-box">
+                   <div class="close-div">
+                    <ion-icon class="close-login" name="close"></ion-icon>
+                   </div> 
+                   
+                   <div class="fade-animate">
+                    <h2>Account Log In</h2>
+
+                    <form autocomplete="off" action="/" method="post">
+                        <div class="input">
+                           <input class="username-input" type="text" name="username"
+                           placeholder="username/Email">
+                           <span class="error" id="username-error"></span> 
+                        </div>
+
+                        <div class="input">
+                            <input class="password-input" type="password" name="password"
+                            placeholder="password">
+                            <span class="error" id="password-error"></span> 
+                         </div>
+
+                         <button class="submit-button" type="submit">Log In</button>
+                    </form>
+
+                    <div class="cta-help">
+                        <a href="#">Having problem?</a>
+                        <a href="#">Register now</a>
+                    </div>
+
+                    <div class="label-login-method">
+                        More Login Methods
+                    </div>
+
+                    <div class="login-methods">
+                        <a href="#" class="Link-sign-in">
+                            <img src="asests/google.svg" alt="">
+                        </a>
+                        <a href="#" class="Link-sign-in apple-bg">
+                            <img src="asests/apple.svg" alt="">
+                        </a>
+                        <a href="#" class="Link-sign-in fb-bg">
+                            <img src="asests/facebook.svg" alt="">
+                        </a>
+                        <a href="#" class="Link-sign-in tw-bg">
+                            <img src="asests/twitter.svg" alt="">
+                        </a>
+                    </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
