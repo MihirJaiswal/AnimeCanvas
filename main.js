@@ -104,7 +104,7 @@ window.onload = () => {
             charError.classList.remove("active");
             charDefault.classList.add("active");
         }else {
-            passwordError.innerText = "Password can not be empty";
+            passwordError.innerText = "*Password can not be empty*";
             submitButton.disabled = true;
             charError.classList.add("active");
             charDefault.classList.remove("active");
