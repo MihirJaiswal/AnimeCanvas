@@ -1,6 +1,114 @@
 body {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Poppins", sans-serif;
+  background: transparent;
+  outline: none;
+  border: none;
+}
+
+.main-container {
+  max-width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #0a0a0a;
+}
+.main-container .hero-section {
+  position: relative;
+  z-index: 1;
+  max-width: 100%;
+  height: 100%;
+  background: url("asests/girl1.png") center;
+  background-repeat: inherit;
+}
+.main-container .hero-section nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 1.5rem;
+  align-items: center;
+  background: black;
+  color: white;
+}
+.main-container .hero-section nav .login {
+  padding: 1.5 rem 1 rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 500ms ease;
+  cursor: pointer;
+}
+.main-container .hero-section nav .login .hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+.main-container .hero-section nav .login .person {
+  font-size: 20px;
+}
+.main-container .modal-overlay {
+  position: fixed;
+  z-index: 5;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-container .modal-overlay .modal-box {
+  width: 40rem;
+}
+.main-container .modal-overlay .modal-box .close {
+  color: white;
+  font-size: 2.5rem;
+  float: right;
+  clear: both;
+  cursor: pointer;
+}
+.main-container .modal-overlay .modal-box img {
+  width: 100%;
+  border-radius: 12px;
+}
+.main-container .login-overlay {
+  position: fixed;
+  z-index: 5;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-container .login-overlay .login-outer-box {
+  position: relative;
+  width: 30rem;
+}
+.main-container .login-overlay .login-outer-box .chibi-container {
+  position: relative;
+  width: 100%;
+  height: 130px;
+}
+.main-container .login-overlay .login-outer-box .chibi-container .chibi-img {
+  display: block;
+  position: absolute;
+  width: 150px;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  transition: all 500ms cubic-bezier(0.18, 0.89, 0.32, 1.27);
+}
+.main-container .login-overlay .login-outer-box .chibi-container .chibi-img .active {
+  top: 0;
+}
+.main-container .login-overlay .login-outer-box .chibi-container .login-inner-box {
+  position: relative;
+  z-index: 2;
+  background: white;
+  border-radius: 10px;
+  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
