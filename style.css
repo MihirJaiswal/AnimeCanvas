@@ -34,8 +34,10 @@ body {
   color: white;
 }
 .main-container .hero-section nav .login {
-  padding: 1.5rem 1rem;
-  color: white;
+  padding: 0 1.5rem;
+  color: rgb(246, 237, 237);
+  background: #000;
+  border: none;
   display: flex;
   align-items: center;
   gap: 15px;
@@ -45,7 +47,7 @@ body {
   cursor: pointer;
 }
 .main-container .hero-section nav .login:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(79, 77, 77, 0.2);
 }
 .main-container .hero-section nav .login .person {
   font-size: 20px;
@@ -78,7 +80,7 @@ body {
   z-index: 5;
   inset: 0;
   background: rgba(0, 0, 0, 0.5);
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
 }
@@ -113,6 +115,7 @@ body {
 }
 .main-container .login-overlay .login-outer-box .login-inner-box .close-div {
   width: 100%;
+  height: -moz-max-content;
   height: max-content;
   margin-bottom: 1rem;
   display: flex;
@@ -145,7 +148,7 @@ form {
   border-radius: 10px;
   transition: all 500ms ease;
 }
-.submit-button .active {
+.submit-button.active {
   background: #000;
   color: #db9a45;
 }
@@ -197,7 +200,6 @@ input[type=text]:focus, input[type=password]:focus {
   display: block;
   align-self: center;
   height: 1px;
-  -webkit-box-flex: 1;
   flex-grow: 1;
   background: #c0c1c4;
 }
@@ -206,7 +208,6 @@ input[type=text]:focus, input[type=password]:focus {
   display: block;
   align-self: center;
   height: 1px;
-  -webkit-box-flex: 1;
   flex-grow: 1;
   background: #c0c1c4;
 }
@@ -233,7 +234,8 @@ input[type=text]:focus, input[type=password]:focus {
   width: 37px;
   height: 18px;
   display: block;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .main-container .login-overlay .login-outer-box .login-inner-box .login-methods .fb-bg {
   background: #1278f3;
@@ -243,6 +245,4 @@ input[type=text]:focus, input[type=password]:focus {
 }
 .main-container .login-overlay .login-outer-box .login-inner-box .login-methods .tw-bg {
   background: #179cf0;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
