@@ -35,7 +35,7 @@ body{
         color: white;
 
         .login{
-            padding: 1.5 rem 1 rem;
+            padding: 1.5rem 1rem;
             color: white;
             display: flex;
             align-items: center;
@@ -94,7 +94,7 @@ body{
        .login-outer-box{
         position: relative;
         width: 30rem;
-       /*  height: 35rem; */
+
 
         .chibi-container{
             position: relative;
@@ -140,7 +140,7 @@ body{
             }
             h2{
                 text-align: center;
-                padding: 20px;
+                margin-bottom: 1rem;
             }
         }
        }
@@ -149,10 +149,11 @@ body{
 
 form{
     width: 100%;
-    padding: 20px;
+    padding: 15px;
+}
 
     .submit-button{
-        width: 100%;
+        width: 95%;
         font-size: 1rem;
         padding: 10px;
         margin-top: 1 rem;
@@ -182,7 +183,7 @@ form{
     }
 
     input[type=text], input[type=password]{
-        width: 100%;
+        width: 90%;
         padding: 15px 10px;
         background: #f8f6f6;
         border: 1px solid #ccc;
@@ -194,7 +195,7 @@ form{
             border: 1px solid #db9a45;
         }
     }
-}
+
 
 .main-container .login-overlay .login-outer-box .login-inner-box{
     
@@ -239,4 +240,42 @@ form{
         background: #c0c1c4;
     }
    }
+   .login-methods{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    font-size: 30px;
+    color: #c0c1c4;
+    font-weight: 500;
+    padding: 0 20px 1rem 20px;
+    gap: 1rem;
+
+    a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 4opx;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid rgba(0,0,0,.8);
+
+        img{
+            width: 37px;
+            height: 18px;
+            display: block;
+            object-fit: contain;
+        }
+        
+    }
+    .fb-bg{
+        background: #1278f3;
+    }
+    .apple-bg{
+        background: #000;
+    }
+    .tw-bg{
+        background: #179cf0;
+    }
+   }
+
 }
