@@ -115,7 +115,6 @@ body {
 }
 .main-container .login-overlay .login-outer-box .login-inner-box .close-div {
   width: 100%;
-  height: -moz-max-content;
   height: max-content;
   margin-bottom: 1rem;
   display: flex;
@@ -200,6 +199,7 @@ input[type=text]:focus, input[type=password]:focus {
   display: block;
   align-self: center;
   height: 1px;
+  -webkit-box-flex: 1;
   flex-grow: 1;
   background: #c0c1c4;
 }
@@ -208,6 +208,7 @@ input[type=text]:focus, input[type=password]:focus {
   display: block;
   align-self: center;
   height: 1px;
+  -webkit-box-flex: 1;
   flex-grow: 1;
   background: #c0c1c4;
 }
@@ -234,8 +235,7 @@ input[type=text]:focus, input[type=password]:focus {
   width: 37px;
   height: 18px;
   display: block;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .main-container .login-overlay .login-outer-box .login-inner-box .login-methods .fb-bg {
   background: #1278f3;
@@ -245,4 +245,6 @@ input[type=text]:focus, input[type=password]:focus {
 }
 .main-container .login-overlay .login-outer-box .login-inner-box .login-methods .tw-bg {
   background: #179cf0;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
